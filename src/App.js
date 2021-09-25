@@ -1,13 +1,11 @@
 import "./App.css";
-import City from "./components/City";
-import WeatherInfo from "./components/WeatherInfo";
-import AppLabel from "./components/AppLabel";
+import SearchCity from "./SearchCity";
+import Weather from "./Weather";
+
 function App() {
 	return (
 		<div className="App">
-			<AppLabel />
-			<City />
-			<WeatherInfo />
+			<SearchCity />
 		</div>
 	);
 }

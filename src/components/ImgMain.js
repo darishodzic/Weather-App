@@ -1,9 +1,9 @@
 import React from "react";
-import "./City.css";
+import "../App.css";
 
-const City = () => {
+const ImgMain = () => {
 	return (
-		<div className="City">
+		<div className="MainImg">
 			<img
 				className="City-logo"
 				src="icons/perfect-day.svg"
@@ -12,4 +12,4 @@ const City = () => {
 		</div>
 	);
 };
-export default City;
+export default ImgMain;

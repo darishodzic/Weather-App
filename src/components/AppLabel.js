@@ -1,5 +1,5 @@
 import React from "react";
-import "./AppLabel.css";
+import "../App.css";
 
 const AppLabel = () => {
 	return (
