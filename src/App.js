@@ -1,11 +1,17 @@
 import "./App.css";
 import SearchCity from "./SearchCity";
 import Weather from "./Weather";
+import {
+	Switch,
+	Route,
+} from "react-router-dom";
 
 function App() {
 	return (
 		<div className="App">
-			<SearchCity />
+			<Route path="/" exact>
+				<SearchCity />
+			</Route>
 		</div>
 	);
 }

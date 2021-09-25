@@ -7,7 +7,7 @@ const SearchBox = () => {
 				type="text"
 				placeholder="City"
 			/>
-			<button>Submit</button>
+			<button>Search</button>
 		</form>
 	);
 };
