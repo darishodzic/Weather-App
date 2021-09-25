@@ -1,17 +1,32 @@
 import "./App.css";
-import SearchCity from "./SearchCity";
-import Weather from "./Weather";
+import SearchCity from "./components/SearchCity";
+import Weather from "./components/Weather";
+import { useState } from "react";
+
 import {
 	Switch,
 	Route,
 } from "react-router-dom";
 
 function App() {
+	const [inputValue, setInputvalue] =
+		useState("");
+
 	return (
 		<div className="App">
-			<Route path="/" exact>
-				<SearchCity />
-			</Route>
+			<Switch>
+				<Route path="/" exact>
+					<SearchCity
+						inputValue={inputValue}
+						setInputvalue={
+							setInputvalue
+						}
+					/>
+				</Route>
+				<Route path="/Weather" exact>
+					<Weather />
+				</Route>
+			</Switch>
 		</div>
 	);
 }
