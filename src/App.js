@@ -23,7 +23,7 @@ function App() {
 						}
 					/>
 				</Route>
-				<Route path="/Weather" exact>
+				<Route path="/W" exact>
 					<Weather />
 				</Route>
 			</Switch>
