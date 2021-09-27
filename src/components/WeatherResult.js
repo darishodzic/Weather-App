@@ -24,7 +24,7 @@ const WeatherResult = ({
 	WeatherData,
 }) => {
 	return (
-		<div>
+		<div className="Weather-Props">
 			<WeatherProp
 				data={data[0]}
 				WeatherData={
@@ -39,7 +39,9 @@ const WeatherResult = ({
 			/>
 			<WeatherProp
 				data={data[2]}
-				WeatherData={WeatherData.wind}
+				WeatherData={
+					WeatherData.wind.speed
+				}
 			/>
 			<WeatherProp
 				data={data[3]}

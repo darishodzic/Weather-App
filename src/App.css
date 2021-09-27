@@ -99,3 +99,9 @@
 	font-weight: bold;
 	text-align: center;
 }
+
+.Weather-Props {
+	border: green 1px solid;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
