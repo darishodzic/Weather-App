@@ -1,10 +1,11 @@
 import React from "react";
 import "../App.css";
 
-const Location = () => {
+const Location = ({ WeatherData }) => {
 	return (
 		<div className="Location">
-			London, GB
+			{WeatherData.name},{" "}
+			{WeatherData.sys.country}
 		</div>
 	);
 };

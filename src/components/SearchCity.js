@@ -1,21 +1,19 @@
 import React from "react";
 import ImgMain from "./ImgMain";
 import WeatherInfo from "./WeatherInfo";
-import AppLabel from "./AppLabel";
 import "../App.css";
 import SearchBox from "./SearchBox";
 
 const SearchCity = ({
-	inputValue,
 	setInputvalue,
+	fetchWeather,
 }) => {
 	return (
 		<div className="SearchCity">
-			<AppLabel />
 			<ImgMain />
 			<WeatherInfo />
 			<SearchBox
-				inputValue={inputValue}
+				fetchWeather={fetchWeather}
 				setInputvalue={setInputvalue}
 			/>
 		</div>

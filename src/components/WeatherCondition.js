@@ -1,14 +1,28 @@
 import React from "react";
 import "../App.css";
 
-const WeatherCondition = () => {
+const WeatherCondition = ({
+	WeatherData,
+}) => {
 	return (
 		<div className="WeatherCondition">
 			<span>
-				<span>30 C</span> | Cloudy
+				<span>
+					{Math.round(
+						(WeatherData.main.temp -
+							273.15) *
+							10
+					) / 10}{" "}
+					C
+				</span>{" "}
+				|{" "}
+				{
+					WeatherData.weather[0]
+						.description
+				}
 			</span>
 			<img
-				src="/icons/perfect-day.svg"
+				src={`https://openweathermap.org/img/w/${WeatherData.weather[0].icon}.png`}
 				alt=""
 			/>
 		</div>
