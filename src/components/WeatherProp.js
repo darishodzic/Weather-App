@@ -1,16 +1,19 @@
 import React from "react";
 import "../App.css";
 
-const WeatherProp = () => {
+const WeatherProp = ({
+	data,
+	WeatherData,
+}) => {
 	return (
 		<div>
 			<img
-				src="/icons/day.svg"
+				src={data.icon_link}
 				alt=""
 			/>
 			<span>
-				<h1>15:30</h1>
-				<h2>Summer</h2>
+				<h1>{WeatherData}</h1>
+				<h2>{data.name}</h2>
 			</span>
 		</div>
 	);
