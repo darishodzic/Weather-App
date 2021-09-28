@@ -31,6 +31,9 @@ function App() {
 			{WeatherData ? (
 				<Weather
 					WeatherData={WeatherData}
+					updateWeatherData={
+						updateWeatherData
+					}
 				/>
 			) : (
 				<SearchCity

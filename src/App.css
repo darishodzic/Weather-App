@@ -115,6 +115,17 @@
 	width: 50px;
 }
 
+.backBtn {
+	border: none;
+	padding: 0.5rem 1rem;
+	color: white;
+	background-color: rgb(5, 61, 61);
+	cursor: pointer;
+	border-radius: 5px;
+	position: relative;
+	bottom: 10px;
+}
+
 @media screen and (max-width: 800px) {
 	.App {
 		width: 90%;

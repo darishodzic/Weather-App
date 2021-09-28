@@ -2,8 +2,11 @@ import React from "react";
 import WeatherCondition from "./WeatherCondition";
 import Location from "./Location";
 import WeatherResult from "./WeatherResult";
-
-const Weather = ({ WeatherData }) => {
+import "../App.css";
+const Weather = ({
+	WeatherData,
+	updateWeatherData,
+}) => {
 	return (
 		<div className="Weather">
 			<WeatherCondition
@@ -15,6 +18,14 @@ const Weather = ({ WeatherData }) => {
 			<WeatherResult
 				WeatherData={WeatherData}
 			/>
+			<button
+				className="backBtn"
+				onClick={() => {
+					updateWeatherData("");
+				}}
+			>
+				BACK
+			</button>
 		</div>
 	);
 };
