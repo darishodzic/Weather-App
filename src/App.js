@@ -23,7 +23,6 @@ function App() {
 			`https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${API_KEY}`
 		);
 		updateWeatherData(response.data);
-		console.log(response.data);
 	};
 	return (
 		<div className="App">
