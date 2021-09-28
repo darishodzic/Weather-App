@@ -6,7 +6,7 @@ const WeatherProp = ({
 	WeatherData,
 }) => {
 	return (
-		<div>
+		<div className="Weather-Prop">
 			<img
 				src={data.icon_link}
 				alt=""

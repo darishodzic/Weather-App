@@ -28,7 +28,12 @@ const WeatherResult = ({
 			<WeatherProp
 				data={data[0]}
 				WeatherData={
-					WeatherData.main.feels_like
+					Math.round(
+						(WeatherData.main
+							.feels_like -
+							273.15) *
+							10
+					) / 10
 				}
 			/>
 			<WeatherProp
